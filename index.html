@@ -8,51 +8,41 @@
 </head>
 <body>
     <div class="container">
-        <form action="" method="post">
+        <div class="lateral-art">
+            <div>logo+ODIN</div>
+            <div>photo by <a href="https://unsplash.com/@haliewestphoto">Halie West</a> on <a href="https://unsplash.com/">Unsplash</a></div>
+        </div>
+        <div class="mainframe">
             
-            <h1>datagrabber 3000</h1>
-            <p>Required fields are followed by <strong><span aria-label="required">*</span></strong>.</p>
-
             <section>
-                <h2>section radio</h2>
-                <fieldset>
-                    <legend>test</legend>
-                    <ul>
-                        <li><label for="">label1</label><input type="radio" id="id1" name="1" value="1"></li>
-                        <li><label for="">label2</label><input type="radio" id="id2" name="2" value="2"></li>
-                        <li><label for="">label3</label><input type="radio" id="id3" name="3" value="3"></li>
-                        <li><label for="">label4</label><input type="radio" id="id4" name="4" value="4"></li>
-                    </ul>
-                </fieldset>
+                <p>this is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</p>
+                <p>Sign up <em>now</em> to get started.</p>
+                <p>you <em>know</em> you want to.</p>
             </section>
-
-            <label for="name">Name</label><input type="text" name="user_name" id="name">
-            <label for="surname">Surname</label><input type="text" name="user_surname" id="surname">
-            <label for="nickname">Nickname</label><input type="text" name="user_nickname" id="nickname">
-
-            <fieldset>
-                <legend>Contact</legend>
-                <label for="mail">Email</label><input type="mail" name="user_mail">
-                <label for="tel">Phone</label><input type="tel" name="user_tel">
-                <label for="adress1">Adress</label><input type="text" name="user_adress1" id="adress1">
-                <label for="adress2">Adress complement</label><input type="text" name="user_adress2" id="adress2">
-            </fieldset>
-
-            <fieldset>
-                <legend>Biology</legend>
-                <label for="">Blood group</label><input type="text">
-                <label for="">Bio</label><input type="radio">
-                <label for="">Techno</label><input type="radio">
-            </fieldset>
-
-            <fieldset>
-                <legend>Optional</legend>
-                <label for=""></label><input type="checkbox">
-                <label for=""></label><input type="text">
-                <label for=""></label><input type="text">
-            </fieldset>
-
-        </form>
+            <div class="container-form">
+                <form action="./index.html" method="post">
+                    <section>
+                        <p>let's do this!</p>
+                        <p>
+                            <label for="first-name">FIRST NAME</label><input type="text" name="user_first_name" id="first-name">
+                            <label for="last-name">LAST NAME</label><input type="text" name="user_last_name" id="last-name">
+                        </p>
+                        <p>
+                            <label for="email">EMAIL</label><input type="email" name="contact1" id="email">
+                            <label for="phone">PHONE</label><input type="tel" name="contact2" id="phone">
+                        </p>
+                        <p>
+                            <label for="pwd">PASSWORD</label><input type="password" name="user_password" id="pwd">
+                            <label for="pwd2">CONFIRM PASSWORD</label><input type="password" name="user_password_confirm" id="pwd2">
+                        </p>
+                    </section>
+                    <section>
+                        <button type="submit">Create Account</button>
+                        <p>already have an account ? <a href="https://www.theodinproject.com/">Log in</a></p>
+                    </section>
+                </form>
+            </div>
+        </div>
     </div>
 </body>
 </html>
