@@ -4,45 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
     <title>form</title>
 </head>
 <body>
     <div class="container">
-        <div class="lateral-art">
-            <div>logo+ODIN</div>
-            <div>photo by <a href="https://unsplash.com/@haliewestphoto">Halie West</a> on <a href="https://unsplash.com/">Unsplash</a></div>
+        <div class="lateral-frame">
+            <img class="lateral-frame-image" src="./resources/halie-west-25xggax4bSA-unsplash.jpg" alt="a close up photo of humid ferns, in a forest undergrowth">
+            <div class="lateral-frame-banner"><img src="./resources/odin-lined.png" alt="the odin's project logo, a stylized odin face"><p>ODIN</p></div>
+            <div class="lateral-frame-credits">photo by <a href="https://unsplash.com/@haliewestphoto">Halie West</a> on <a href="https://unsplash.com/">Unsplash</a></div>
         </div>
-        <div class="mainframe">
+        
+        <div class="main-frame">
             
             <section>
-                <p>this is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</p>
-                <p>Sign up <em>now</em> to get started.</p>
-                <p>you <em>know</em> you want to.</p>
+                <p>
+                    this is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.<br>
+                    Sign up <em>now</em> to get started.<br>
+                    you <em>know</em> you want to.
+                </p>
             </section>
+
             <div class="container-form">
                 <form action="./index.html" method="post">
-                    <section>
-                        <p>let's do this!</p>
-                        <p>
+                    <h1>let's do this!</h1>
+                    <div class="form-columns">
+                        <div>
                             <label for="first-name">FIRST NAME</label><input type="text" name="user_first_name" id="first-name">
                             <label for="last-name">LAST NAME</label><input type="text" name="user_last_name" id="last-name">
-                        </p>
-                        <p>
                             <label for="email">EMAIL</label><input type="email" name="contact1" id="email">
+                        </div>
+                        <div>
                             <label for="phone">PHONE</label><input type="tel" name="contact2" id="phone">
-                        </p>
-                        <p>
                             <label for="pwd">PASSWORD</label><input type="password" name="user_password" id="pwd">
                             <label for="pwd2">CONFIRM PASSWORD</label><input type="password" name="user_password_confirm" id="pwd2">
-                        </p>
-                    </section>
-                    <section>
-                        <button type="submit">Create Account</button>
-                        <p>already have an account ? <a href="https://www.theodinproject.com/">Log in</a></p>
-                    </section>
+                        </div>
+                    </div>
                 </form>
             </div>
+
+            <section>
+                <button type="submit">Create Account</button>
+                <p>already have an account ? <a href="https://www.theodinproject.com/">Log in</a></p>
+            </section>          
         </div>
     </div>
+
+    <script src="./script.js"></script>
 </body>
 </html>

@@ -1,0 +1,116 @@
+@import url(//db.onlinewebfonts.com/c/7d460b18433753a097e5bc2bad7c8dd9?family=Norse);
+
+@media(max-width: 700px){
+    .lateral-frame{
+        visibility: hidden;
+    }
+
+
+}
+
+:root{
+--logo-text-max-height: 10px;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(39, 39, 39);
+}
+
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        width: 80%;
+        
+    }
+
+        .main-frame{
+            grid-column: 2/-1;
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+
+            background-color: lightgray;
+
+        }
+
+            .container-form{
+                grid-row: 2;
+                background-color: white;
+                box-shadow:  5px 5px 5px 2px rgba(0, 0, 0, 0.3);
+            }
+
+            .container-form label{
+                display: block;
+            }
+
+                .form-columns{
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                }
+
+                    .form-columns:first-child{
+                        grid-column: 1/2;
+                    }
+
+                    .form-columns:last-child{
+                        grid-column: 2/3;
+                    }
+
+            .lateral-frame{
+            
+                grid-column: 1/2;
+
+                display: grid;
+                grid-template-rows: repeat(5,1fr);
+        
+                color: white;
+            }
+
+                .lateral-frame-image,
+                .lateral-frame-banner,
+                .lateral-frame-credits{
+                    grid-column: 1;
+                }
+
+                .lateral-frame-image{
+                    grid-row: 1/-1;
+                    width: 100%;
+                }
+
+                .lateral-frame-banner{
+                    grid-row: 2/3;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    background-color: rgba(128, 128, 128, 0.5);
+                    color: white;
+                    font-family: 'Norse',system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+                    font-size: 6vw;
+                }
+
+                .lateral-frame-banner img{
+                    width: 20%;
+                    
+                }
+
+                .lateral-frame-credits{
+                    grid-row: 5/5;
+                    place-self: end center;
+                    font-size: 0.8vw;
+                    margin-bottom: 0.8vw;
+                }
+
+                .lateral-frame-credits a{
+                    color: white;
+                }
