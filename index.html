@@ -21,6 +21,7 @@
                 <p>
                     this is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.<br>
                     Sign up <em>now</em> to get started.<br>
+                    <br>
                     you <em>know</em> you want to.
                 </p>
             </section>
@@ -30,14 +31,14 @@
                     <h1>let's do this!</h1>
                     <div class="form-columns">
                         <div>
-                            <label for="first-name">FIRST NAME</label><input type="text" name="user_first_name" id="first-name">
-                            <label for="last-name">LAST NAME</label><input type="text" name="user_last_name" id="last-name">
-                            <label for="email">EMAIL</label><input type="email" name="contact1" id="email">
+                            <label for="first-name">FIRST NAME</label><input type="text" name="user_first_name" id="first-name" autocomplete="given-name" required>
+                            <label for="phone">PHONE</label><input type="tel" name="contact2" id="phone" autocomplete="tel" required>
+                            <label for="pwd">PASSWORD</label><input type="password" name="user_password" id="pwd" autocomplete="new-password" required>
                         </div>
                         <div>
-                            <label for="phone">PHONE</label><input type="tel" name="contact2" id="phone">
-                            <label for="pwd">PASSWORD</label><input type="password" name="user_password" id="pwd">
-                            <label for="pwd2">CONFIRM PASSWORD</label><input type="password" name="user_password_confirm" id="pwd2">
+                            <label for="last-name">LAST NAME</label><input type="text" name="user_last_name" id="last-name" autocomplete="family-name" required>
+                            <label for="email">EMAIL</label><input type="email" name="contact1" id="email" autocomplete="email" required>
+                            <label for="pwd2">CONFIRM PASSWORD</label><input type="password" name="user_password_confirm" id="pwd2" autocomplete="new-password" required>
                         </div>
                     </div>
                 </form>

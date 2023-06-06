@@ -9,7 +9,10 @@
 }
 
 :root{
---logo-text-max-height: 10px;
+--default-text-height: 0.7rem;
+--default-margin-left: 2rem;
+--default-margin: 1rem;
+--default-border-radius: 0.5rem;
 }
 
 
@@ -23,6 +26,17 @@ body{
     display: flex;
     justify-content: center;
     background-color: rgb(39, 39, 39);
+}
+
+input{
+    border: 1px solid #E5E7EB;
+    border-radius: var(--default-border-radius);
+    padding: var(--default-border-radius);
+}
+
+input:focus{
+    box-shadow: 3px 3px 7px 2px rgba(0, 0, 0, 0.3);
+    border: 1px solid blue;
 }
 
     .container{
@@ -43,15 +57,47 @@ body{
 
         }
 
+            .main-frame section{
+                margin-left: var(--default-margin-left);
+                margin-bottom: var(--default-margin);
+            }
+
+            .main-frame section button{
+                all: unset;
+                cursor: pointer;
+                background-color: #596D48;
+                color: white;
+                border-radius: var(--default-border-radius);
+                padding: var(--default-margin);
+                margin-bottom: var(--default-margin);
+                margin-top: var(--default-margin);
+
+            }
+
+            .main-frame section a{
+                color: #596D48;
+                text-decoration: none;
+                
+            }
+
             .container-form{
                 grid-row: 2;
                 background-color: white;
                 box-shadow:  5px 5px 5px 2px rgba(0, 0, 0, 0.3);
             }
 
-            .container-form label{
-                display: block;
-            }
+                .container-form h1{
+                    margin-left: var(--default-margin-left);
+                }
+
+                .container-form label{
+                    display: block;
+                    width: 200px;
+                    font-family: sans-serif;
+                    color: grey;
+                    font-size: var(--default-text-height);
+                    margin-top: var(--default-margin);
+                }
 
                 .form-columns{
                     display: grid;
@@ -64,6 +110,12 @@ body{
 
                     .form-columns:last-child{
                         grid-column: 2/3;
+                    }
+
+                    .form-columns:first-child,
+                    .form-columns:last-child{
+                        margin-left: var(--default-margin-left);
+                        margin-bottom: var(--default-margin);
                     }
 
             .lateral-frame{
