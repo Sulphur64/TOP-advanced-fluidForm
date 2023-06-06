@@ -12,7 +12,7 @@
 :root{
 --default-text-height: 0.7rem;
 --default-margin-left: 2rem;
---default-margin: 1rem;
+--default-margin: 1.2rem;
 --default-border-radius: 0.5rem;
 }
 
@@ -40,7 +40,7 @@ label{
 
 input{
     border: 1px solid #E5E7EB;
-    border-radius: var(--default-border-radius);
+    border-radius: calc(var(--default-border-radius)*0.7);
     padding: var(--default-border-radius);
     margin-bottom: var(--default-margin);
 }
@@ -55,7 +55,10 @@ input:focus{
 
 input.error{
     border: 1px solid red;
+    margin-bottom: 0;
 }
+
+
 
     .container{
         display: grid;
@@ -103,16 +106,13 @@ input.error{
                 grid-row: 2;
                 background-color: white;
                 box-shadow:  5px 5px 5px 2px rgba(0, 0, 0, 0.3);
+                margin-bottom: auto;
             }
 
                 .form-1{
                     display: grid;
                     grid-template-columns: repeat(3, 1fr);
                     grid-template-rows: repeat(4,1fr);
-                }
-
-                .form-1 *{
-                    
                 }
 
                 .form-1 h1{
