@@ -1,11 +1,12 @@
-@import url(//db.onlinewebfonts.com/c/7d460b18433753a097e5bc2bad7c8dd9?family=Norse);
-
 @media(max-width: 700px){
     .lateral-frame{
         visibility: hidden;
     }
+}
 
-
+@font-face {
+    font-family: Norse;
+    src: url(./resources/Norse-Bold.woff);
 }
 
 :root{
@@ -28,13 +29,27 @@ body{
     background-color: rgb(39, 39, 39);
 }
 
+label{
+    display: block;
+    width: 200px;
+    font-family: sans-serif;
+    color: grey;
+    font-size: var(--default-text-height);
+    margin-top: var(--default-margin);
+}
+
 input{
     border: 1px solid #E5E7EB;
     border-radius: var(--default-border-radius);
     padding: var(--default-border-radius);
+    margin-bottom: var(--default-margin);
 }
 
 input:focus{
+    all: unset;
+    border-radius: var(--default-border-radius);
+    padding: var(--default-border-radius);
+    margin-bottom: var(--default-margin);
     box-shadow: 3px 3px 7px 2px rgba(0, 0, 0, 0.3);
     border: 1px solid blue;
 }
@@ -68,7 +83,7 @@ input:focus{
                 background-color: #596D48;
                 color: white;
                 border-radius: var(--default-border-radius);
-                padding: var(--default-margin);
+                padding: var(--default-margin) calc(var(--default-margin)*3);
                 margin-bottom: var(--default-margin);
                 margin-top: var(--default-margin);
 
@@ -86,45 +101,61 @@ input:focus{
                 box-shadow:  5px 5px 5px 2px rgba(0, 0, 0, 0.3);
             }
 
-                .container-form h1{
+                .form-1{
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    grid-template-rows: repeat(4,1fr);
+                }
+
+                .form-1 *{
+                    align-self: center;
+                }
+
+                .form-1 h1{
+                    margin-left: var(--default-margin-left);
+                    font-size: 2rem;
+                    grid-column: 1/2;
+                    grid-row: 1/2;
+                }
+
+                .form-1 div{
                     margin-left: var(--default-margin-left);
                 }
 
-                .container-form label{
-                    display: block;
-                    width: 200px;
-                    font-family: sans-serif;
-                    color: grey;
-                    font-size: var(--default-text-height);
-                    margin-top: var(--default-margin);
+                .form-1 div:nth-of-type(1){
+                    grid-column: 1/2;
+                    grid-row: 2/3;
                 }
 
-                .form-columns{
-                    display: grid;
-                    grid-template-columns: repeat(3, 1fr);
+                .form-1 div:nth-of-type(2){
+                    grid-column: 2/3;
+                    grid-row: 2/3;
                 }
 
-                    .form-columns:first-child{
-                        grid-column: 1/2;
-                    }
+                .form-1 div:nth-of-type(3){
+                    grid-column: 1/2;
+                    grid-row: 3/4;
+                }
 
-                    .form-columns:last-child{
-                        grid-column: 2/3;
-                    }
+                .form-1 div:nth-of-type(4){
+                    grid-column: 2/3;
+                    grid-row: 3/4;
+                }
 
-                    .form-columns:first-child,
-                    .form-columns:last-child{
-                        margin-left: var(--default-margin-left);
-                        margin-bottom: var(--default-margin);
-                    }
+                .form-1 div:nth-of-type(5){
+                    grid-column: 1/2;
+                    grid-row: 4/-1;
+                }
+
+                .form-1 div:nth-of-type(6){
+                    grid-column: 2/3;
+                    grid-row: 4/-1;
+                }
 
             .lateral-frame{
-            
                 grid-column: 1/2;
-
                 display: grid;
                 grid-template-rows: repeat(5,1fr);
-        
                 color: white;
             }
 
