@@ -20,6 +20,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 
@@ -33,9 +34,8 @@ label{
     display: block;
     width: 200px;
     font-family: sans-serif;
-    color: grey;
+    color: rgb(39, 39, 39);
     font-size: var(--default-text-height);
-    margin-top: var(--default-margin);
 }
 
 input{
@@ -49,9 +49,12 @@ input:focus{
     all: unset;
     border-radius: var(--default-border-radius);
     padding: var(--default-border-radius);
-    margin-bottom: var(--default-margin);
     box-shadow: 3px 3px 7px 2px rgba(0, 0, 0, 0.3);
     border: 1px solid blue;
+}
+
+input.error{
+    border: 1px solid red;
 }
 
     .container{
@@ -75,6 +78,7 @@ input:focus{
             .main-frame section{
                 margin-left: var(--default-margin-left);
                 margin-bottom: var(--default-margin);
+                margin-top: var(--default-margin);
             }
 
             .main-frame section button{
@@ -108,7 +112,7 @@ input:focus{
                 }
 
                 .form-1 *{
-                    align-self: center;
+                    
                 }
 
                 .form-1 h1{
@@ -116,10 +120,17 @@ input:focus{
                     font-size: 2rem;
                     grid-column: 1/2;
                     grid-row: 1/2;
+                    align-self: center;
                 }
 
                 .form-1 div{
                     margin-left: var(--default-margin-left);
+                    
+                }
+
+                .form-1 div p{
+                    font-size: var(--default-text-height);
+                    color: red;
                 }
 
                 .form-1 div:nth-of-type(1){
@@ -157,6 +168,10 @@ input:focus{
                 display: grid;
                 grid-template-rows: repeat(5,1fr);
                 color: white;
+
+                background-image: url(./resources/halie-west-25xggax4bSA-unsplash.jpg);
+                background-size:cover;
+                background-repeat: no-repeat;
             }
 
                 .lateral-frame-image,
