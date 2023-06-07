@@ -1,5 +1,6 @@
-const pass= document.querySelector("#pwd");
-const passConfirm= document.querySelector("#pwd2");
+const pass = document.querySelector("#pwd");
+const passConfirm = document.querySelector("#pwd2");
+const passWarning = document.querySelector(".warning")
 
 function passwordConfirm(){
 
@@ -9,13 +10,16 @@ function passwordConfirm(){
 
         pass.setAttribute("style","border: 1px solid green");
         passConfirm.setAttribute("style","border: 1px solid green");
-        console.log("pass is matching",pass.value,passConfirm.value)
+
+        passWarning.textContent = "";
+        
     } else {
         pass.removeAttribute("style","border: 1px solid green");
         passConfirm.removeAttribute("style","border: 1px solid green");
         pass.classList.add("error");
         passConfirm.classList.add("error");
-        console.log("pass is not matching",pass.value,passConfirm.value)
+
+        passWarning.textContent = "* Passwords do not match";
     }
 };
 

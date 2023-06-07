@@ -84,6 +84,15 @@ input.error{
                 margin-top: var(--default-margin);
             }
 
+            .main-frame section:nth-of-type(1){
+                margin-top: calc(var(--default-margin)*4);
+                margin-right: var(--default-margin);
+            }
+
+            .main-frame section:nth-of-type(2){
+                margin-bottom: calc(var(--default-margin)*4);
+            }
+
             .main-frame section button{
                 all: unset;
                 cursor: pointer;
@@ -128,7 +137,7 @@ input.error{
                     
                 }
 
-                .form-1 div p{
+                .warning{
                     font-size: var(--default-text-height);
                     color: red;
                 }
